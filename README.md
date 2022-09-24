@@ -41,8 +41,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-
 
 ### What I learned
 
@@ -51,25 +49,59 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<div class="img_container">
-            </div>
+  <header class='solar' id="inicio">
+    <div class="text-exp">
+      <h1 class="explora">Explora</h1>
+      <p class="marte-text">Marte</p>
+    </div>
+    <button class="btn"> <a href="#viaje">Conoce más</a> </button>
+    <div class='solar_systm'>
+      <div class='planet mars'>
+      </div>
+    </div>
+  </header>
 ```
+
 ```css
-.img_container{
-    width: 560px;
-    height: 446px;
-    mix-blend-mode: luminosity;
-    /* filter: brightness(.40); */
-    filter: opacity(70%);
-    background-image: url("./images/image-header-desktop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.solar{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.solar_systm{
+  margin-top: -70px;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.planet {
+  box-sizing: border-box;
+  margin: 120px auto;
+  transform: translateY(-50%);
+  height: 1200px;
+  width: 1200px;
+  border-radius: 600px;
+  transition: transform 2.8s 0.23s cubic-bezier(0.33, 0, 0, 1), opacity 2s 0.8s, box-shadow 0s 0s;
+}
+@keyframes planet {
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: -1000px;
+  }
+}
+.mars{
+  transform: translateZ(0px) translateY(0) rotatex(4deg) scaleX(0.89);
+  opacity: 2;
+  animation: planet 60s 3.9s infinite linear;
+}
+ .planet {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg");
+  box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px #e86363 inset, 0 0px 23px 4px #e86363 inset, 0 -10px 130px #6b261a;
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
@@ -79,22 +111,12 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [font awesome](https://fontawesome.com/icons) - icons
+.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Ivan Serrano](https://www.your-site.com)
+- Instagram - [@opengalaxyz](https://www.instagram.com/opengalaxyz)
+- Twitter - [@vanSerrano](https://twitter.com/lvanSerrano)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-# landignPage-uCamp
