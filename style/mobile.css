@@ -1,3 +1,30 @@
 .video{
-    max-width: 200px;
+    max-width: 370px;
+}
+
+.formReser{
+   flex-direction: column;
+}
+.parent{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.cards article{
+    width: 400px;
+}
+.explora{
+    font-size: 4em
+}
+.login-box{
+    margin: 0 auto;
+    border: 1px solid red;
 }

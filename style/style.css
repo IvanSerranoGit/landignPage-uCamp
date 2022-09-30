@@ -8,16 +8,16 @@
 body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     color: aliceblue;
-    border: 1px solid red;
 }
 
 .navbar {
     margin-top: -10px;
     width: 100%;
-    max-width: 665px;
+    max-width: 414px;
     height: 70px;
     background: #0a0f14;
     position: fixed;
+    z-index: 999999;
 }
 
 .nav-list {
@@ -94,7 +94,6 @@ body {
     width: 200px;
     height: 70px;
     border: none;
-    z-index: 9999999;
 }
 
 .btn:hover {
@@ -112,7 +111,7 @@ body {
 
 .marte-section {
     margin: 0 auto;
-    max-width: 665px;
+    max-width: 414px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,7 +121,8 @@ body {
     margin-top: 80px;
     text-align: center;
     align-items: center;
-    width: 600px;
+    padding: 1.5em;
+    width: 400px;
 }
 
 .subtitle {
@@ -216,7 +216,7 @@ body {
     width: 100%;
 }
 .video{
-    max-width: 665px;
+    width: 100%;
 }
 footer {
     background-color: #010101;
@@ -381,7 +381,6 @@ footer {
 }
 .formReser{
     margin-top: -150px;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
