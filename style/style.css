@@ -2,17 +2,19 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    color: aliceblue
+    color: aliceblue;
+    border: 1px solid red;
 }
 
 .navbar {
     margin-top: -10px;
-    z-index: 999999;
     width: 100%;
+    max-width: 665px;
     height: 70px;
     background: #0a0f14;
     position: fixed;
@@ -98,7 +100,7 @@ body {
 .btn:hover {
     background-color: transparent;
     border: 5px solid #FF00C7;
-    transition: 1s;
+    transition: .5s;
 }
 
 .btn a {
@@ -109,14 +111,15 @@ body {
 }
 
 .marte-section {
-    width: 100%;
-    margin-top: 130px;
+    margin: 0 auto;
+    max-width: 665px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .marte-section_info {
+    margin-top: 80px;
     text-align: center;
     align-items: center;
     width: 600px;
@@ -136,7 +139,7 @@ body {
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -202,7 +205,6 @@ body {
 
 .viaje-section {
     width: 100%;
-    margin-top: -600px;
 }
 
 .video-controls {
@@ -213,10 +215,12 @@ body {
     position: relative;
     width: 100%;
 }
-
+.video{
+    max-width: 665px;
+}
 footer {
-    z-index: 99999;
     background-color: #010101;
+    width: 100%;
 }
 
 .container-data {
@@ -377,7 +381,7 @@ footer {
 }
 .formReser{
     margin-top: -150px;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
